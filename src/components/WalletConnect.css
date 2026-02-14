@@ -1,0 +1,153 @@
+.wallet-connect {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end;
+  
+}
+
+.status-container {
+  background: #252525;
+  border-radius: 8px;
+  padding: 16px;
+  border: 1px solid #3a3a3a;
+}
+
+.connected,
+.disconnected {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.status-badge {
+  font-size: 0.9em;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 6px;
+  width: fit-content;
+  letter-spacing: 0.5px;
+}
+
+.status-badge.connected {
+  background: #064e3b;
+  color: #86efac;
+}
+
+.status-badge.disconnected {
+  background: #7f1d1d;
+  color: #fca5a5;
+}
+
+.account-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.account-info .label {
+  font-size: 0.9em;
+  color: #a0a0a0;
+}
+
+.account-info code {
+  background: #1f1f1f;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 0.85em;
+  font-family: 'Courier New', monospace;
+  word-break: break-all;
+  color: #e0e0e0;
+  border: 1px solid #2a2a2a;
+}
+
+.connect-btn,
+.disconnect-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.connect-btn {
+  background: #3b82f6;
+  color: white;
+}
+
+.connect-btn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.disconnect-btn {
+  background: #6b7280;
+  color: white;
+}
+
+.disconnect-btn:hover {
+  background: #4b5563;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(107, 114, 128, 0.3);
+}
+
+.error-banner {
+  margin-top: 12px;
+  padding: 12px;
+  background: #7f1d1d;
+  border-left: 4px solid #ef4444;
+  border-radius: 4px;
+  color: #fca5a5;
+  font-size: 0.9em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .wallet-connect {
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .connect-btn,
+  .disconnect-btn {
+    width: 100%;
+  }
+
+  .account-info code {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .status-container {
+    padding: 12px;
+  }
+
+  .connect-btn,
+  .disconnect-btn {
+    padding: 10px 16px;
+    font-size: 0.9em;
+  }
+}
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .wallet-connect {
+    min-width: auto;
+  }
+
+  .status-container {
+    padding: 15px;
+  }
+
+  .connect-btn,
+  .disconnect-btn {
+    width: 100%;
+    padding: 12px;
+  }
+}

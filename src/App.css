@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #0f0f0f;
+  min-height: 100vh;
+  padding: 16px;
+  color: #e0e0e0;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  background: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+  border: 1px solid #2a2a2a;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background: #1f1f1f;
+  border-bottom: 2px solid #2a2a2a;
+  color: #ffffff;
+  padding: 32px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.header-content h1 {
+  font-size: 2.2em;
+  margin-bottom: 8px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.header-content p {
+  font-size: 1em;
+  color: #a0a0a0;
+  font-weight: 400;
+}
+
+.main-content {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 24px;
+  padding: 32px 24px;
+}
+
+.section {
+  background: #252525;
+  border-radius: 8px;
+  padding: 24px;
+  border: 1px solid #2a2a2a;
+}
+
+.footer {
+  background: #1f1f1f;
+  padding: 16px 24px;
+  text-align: center;
+  border-top: 1px solid #2a2a2a;
+  color: #808080;
+  font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .main-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 24px 20px;
+  }
+
+  .header {
+    padding: 24px 20px;
+  }
+
+  .section {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px 16px;
+  }
+
+  .header-content h1 {
+    font-size: 1.6em;
+  }
+
+  .header-content p {
+    font-size: 0.95em;
+  }
+
+  .main-content {
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .section {
+    padding: 16px;
+  }
+
+  .footer {
+    padding: 12px 16px;
+    font-size: 0.85em;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 8px;
+  }
+
+  .container {
+    border-radius: 8px;
+  }
+
+  .header {
+    padding: 16px 12px;
+    gap: 12px;
+  }
+
+  .header-content h1 {
+    font-size: 1.4em;
+  }
+
+  .header-content p {
+    font-size: 0.9em;
+  }
+
+  .main-content {
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .section {
+    padding: 12px;
+    border-radius: 6px;
+  }
+}
