@@ -275,5 +275,5 @@ MIT
 
 ---
 
-Built with ❤️ for blockchain education
+
 # -Student-Attendance-System
