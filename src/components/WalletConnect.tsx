@@ -20,14 +20,14 @@ export const WalletConnect: React.FC = () => {
               <code>{truncateAddress(account!)}</code>
             </div>
             <button onClick={logout} className="disconnect-btn" disabled={loading}>
-              {loading ? "Logging out..." : "Logout"}
+              {loading ? "Disconnecting..." : "Disconnect"}
             </button>
           </div>
         ) : (
           <div className="disconnected">
             <div className="status-badge disconnected">● Not Connected</div>
             <button onClick={login} className="connect-btn" disabled={loading}>
-              {loading ? "Connecting..." : "Login with Privy"}
+              {loading ? "Connecting..." : "Connect Wallet"}
             </button>
           </div>
         )}

@@ -86,7 +86,7 @@ The app will open at `http://localhost:5173`
 
 ### 4. Use the Frontend
 
-1. Click "Login with Privy" in the top-right
+1. Click "Connect wallet" in the top-right
 2. Complete Privy authentication (email, SMS, or social login)
 3. Your embedded wallet will be created automatically
 4. Make sure you're on the correct network (Celo Sepolia Testnet 11142220)
